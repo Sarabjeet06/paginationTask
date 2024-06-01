@@ -1,0 +1,99 @@
+body{
+    background-color: #2e2a2a;
+}
+
+.main-heading{
+    display: flex;
+    justify-content: center;
+    color: #f5deb3;
+    font-size: 50px;
+    margin: 10px 0px 10px 0px;
+    
+}
+
+
+/*- ---------- cards section------ */
+
+/* ----- card ---- */
+.card{
+    border: 1px solid black;
+    width: 200px;
+    height: 280px;
+    background-color: #cec1c1;
+    transition: transform 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.card img{
+    width: 200px;
+    height:200px;
+    width: fit-content;
+    text-align: center;
+}
+
+.card-content{
+    padding: 10px;
+}
+
+.all-cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-price{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* ----- pagination section----- */
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+    gap: 20px;
+}
+
+.pagination-numbers{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.number{
+    color: #000000;
+    padding: 3px 6px 2px 6px;
+}
+
+.number:hover{
+    background-color: #e6dcdc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pagination-button{
+    background-color: #cec1c1;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active-page{
+    background-color: #bdb1b1;
+    border-radius: 50%;
+    cursor: pointer;
+}

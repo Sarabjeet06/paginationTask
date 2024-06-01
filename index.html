@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination Project</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div>
+        <div class="main-heading">All Products</div>
+        
+        <div class="cards-container">
+            <div id="allCards" class="all-cards">
+                <!-- cards are in this section -->
+                <!-- coming from map function implemented in script.js -->
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="pagination-button" onclick="getPrevPage()">prev</button>
+            <div class="pagination-numbers">
+                <div class="number active-page"  value="1" onclick="activePage(event)" >1</div>
+                <div class="number" value="2" onclick="activePage(event)">2</div>
+                <div class="number" value="3"  onclick="activePage(event)">3</div>
+                <div class="number" value="4"  onclick="activePage(event)">4</div>
+                <div class="number" value="5"  onclick="activePage(event)">5</div>
+            </div>
+            <button class="pagination-button" onclick="getNextPage()">next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
